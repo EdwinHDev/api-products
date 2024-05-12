@@ -13,8 +13,11 @@ app.use(cors())
 
 const PORT = process.env.PORT || 4000
 
-app.use('/uploads', express.static(path.join(__dirname, 'uploads')))
-app.use('/optimize', express.static(path.join(__dirname, 'optimize')))
+// app.use('/uploads', express.static(path.join(__dirname, 'uploads')))
+// app.use('/optimize', express.static(path.join(__dirname, 'optimize')))
+
+app.use(express.static('uploads'))
+app.use(express.static('optimize'))
 
 app.use('/api/upload', uploadRouter)
 app.use('/api/products', productRoutes)

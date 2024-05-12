@@ -23,3 +23,4 @@ app.listen(PORT, () => {
   console.log('Servidor en puerto', PORT)
 })
 
+module.exports = app

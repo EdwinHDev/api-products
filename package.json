@@ -1,0 +1,22 @@
+{
+  "name": "api-products",
+  "version": "0.0.1",
+  "description": "Api de usuarios y productos",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "Edwin Hernández",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.3.4",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.0",
+    "sharp": "^0.33.3",
+    "uuid": "^9.0.1"
+  }
+}

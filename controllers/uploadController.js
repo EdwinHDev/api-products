@@ -21,10 +21,10 @@ const uploadFiles = async (req, res) => {
     helperImg(image.path, `large-${image.filename}`, 1000)
 
     urls.push({
-      original: `${process.env.BASE_URI}/uploads/${image.filename}`,
-      small: `${process.env.BASE_URI}/optimize/small-${image.filename}`,
-      medium: `${process.env.BASE_URI}/optimize/medium-${image.filename}`,
-      large: `${process.env.BASE_URI}/optimize/large-${image.filename}`,
+      original: `${process.env.BASE_URI}/${image.filename}`,
+      small: `${process.env.BASE_URI}/small-${image.filename}`,
+      medium: `${process.env.BASE_URI}/medium-${image.filename}`,
+      large: `${process.env.BASE_URI}/large-${image.filename}`,
     })
   });
 

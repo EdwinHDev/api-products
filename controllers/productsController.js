@@ -82,7 +82,7 @@ const getProducts = async (req, res) => {
   const products = await Product.find()
 
   if(products.length === 0) {
-    return res.json({ message: "No hay productos para mostrar" })
+    return res.status(400).json({ message: "No hay productos para mostrar" })
   }
 
   return res.json(products)
